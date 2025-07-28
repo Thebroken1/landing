@@ -1,84 +1,102 @@
 <?php
 return [
-    'tool' => [
-        'title' => 'Study In Germany',
-        'home' => 'Home',
-        'howitworks' => 'How It Works',
-        'programs' => 'Programs',
-        'pricing' => 'Pricing',
-        'contact' => 'Contact Us',
-        'lang' => 'Language'
+    'toolbar' => [
+        'title' => 'Studieren in Deutschland',
+        'home' => 'Startseite',
+        'howitworks' => 'Wie es funktioniert',
+        'programs' => 'Programme',
+        'pricing' => 'Preise',
+        'contact' => 'Kontakt',
+        'lang' => 'Sprache'
     ],
-    'banner' => [
-        'headline' => 'Study in Germany',
-        'subheadline' => 'Your future starts here. Join thousands of students today!',
-        'cta' => 'Apply Now'
-    ],
+    'banner_headline' => 'Studieren in Deutschland',
+    'banner_subheadline' => 'Ihre Zukunft beginnt hier. Treten Sie heute Tausenden von Studenten bei!',
+    'banner_apply_button' => 'Jetzt bewerben',
     'howitworks' => [
-        'title' => 'How It Works',
+        'title' => 'Wie es funktioniert',
         'step1' => [
-            'title' => '1. Identify the Correct Visa/Residence Permit:',
-            'desc' => 'Germany offers various visas and residence permits depending on your purpose of stay (e.g., work, study, family reunification). Determine which one aligns with your situation.'
+            'title' => '1. Das richtige Visum/Aufenthaltstitel finden:',
+            'desc' => 'Deutschland bietet verschiedene Visa und Aufenthaltstitel je nach Aufenthaltszweck (z. B. Arbeit, Studium, Familienzusammenführung). Bestimme, welches zu deiner Situation passt.'
         ],
         'step2' => [
-            'title' => '2. Gather Required Documents:',
-            'desc' => 'Each visa/permit has specific document requirements. Common documents include your passport, proof of financial means, proof of health insurance, and documents relevant to your purpose of stay (e.g., job offer, university acceptance letter).'
+            'title' => '2. Erforderliche Dokumente sammeln:',
+            'desc' => 'Jedes Visum/Aufenthaltstitel hat spezifische Anforderungen. Übliche Dokumente sind Reisepass, Nachweis finanzieller Mittel, Nachweis einer Krankenversicherung und je nach Zweck (z. B. Arbeitsvertrag, Universitätszulassung) relevante Unterlagen.'
         ],
         'step3' => [
-            'title' => '3. Apply through the German Authority:',
-            'desc' => 'Depending on your visa type, you may apply online through a portal like VIDEX, or you may need to schedule an appointment at a German embassy or consulate. During the application process, you\'ll submit your documents and potentially undergo an interview or provide biometric information.'
+            'title' => '3. Antrag bei der deutschen Behörde stellen:',
+            'desc' => 'Je nach Visum kannst du online über ein Portal wie VIDEX beantragen oder einen Termin bei einer deutschen Botschaft/Konsulat vereinbaren. Während des Antrags reichst du deine Dokumente ein und musst eventuell ein Interview führen oder biometrische Daten abgeben.'
         ]
     ],
     'programs' => [
-        'title' => 'Programs',
-        'engineering' => 'Engineering',
-        'medicine' => 'Medicine',
-        'computerscience' => 'Computer Science',
-        'business' => 'Business',
-        'architecture' => 'Architecture',
-        'humanities' => 'Humanities'
+        'title' => 'Programme',
+        'engineering' => 'Ingenieurwesen',
+        'medicine' => 'Medizin',
+        'computer_science' => 'Informatik',
+        'business' => 'Betriebswirtschaft',
+        'architecture' => 'Architektur',
+        'humanities' => 'Geisteswissenschaften'
     ],
     'pricing' => [
-        'title' => 'Pricing',
+        'title' => 'Preise',
         'basic' => [
-            'title' => 'Basic',
+            'title' => 'Basis',
             'features' => [
-                'General Visa Consultation',
-                'Basic Document Checklist',
-                'Email Support',
-                'Access to FAQ Portal'
+                'Allgemeine Visumberatung',
+                'Einfache Dokumenten-Checkliste',
+                'E-Mail-Support',
+                'Zugang zum FAQ-Portal'
             ],
-            'price' => '$100 Application Fee'
+            'price' => '100 € Antragsgebühr'
         ],
         'boosted' => [
-            'title' => 'Boosted',
+            'title' => 'Erweitert',
             'features' => [
-                'Everything in Basic',
-                '1-on-1 Consultation Call',
-                'Document Review & Feedback',
-                'Priority Email Support'
+                'Alles im Basis-Paket',
+                '1-zu-1 Beratungsgespräch',
+                'Dokumentenprüfung & Feedback',
+                'Priorisierter E-Mail-Support'
             ],
-            'price' => '$50 + $100 Application Fee'
+            'price' => '50 € + 100 € Antragsgebühr'
         ],
         'premium' => [
             'title' => 'Premium',
             'features' => [
-                'Everything in Boosted',
-                'Personal Case Manager',
-                'Application Form Assistance',
-                'Mock Interview Preparation',
-                '24/7 Priority Support'
+                'Alles im Erweitert-Paket',
+                'Persönlicher Fallmanager',
+                'Hilfe beim Antragsformular',
+                'Vorbereitung auf Vorstellungsgespräch',
+                '24/7 Prioritäts-Support'
             ],
-            'price' => '$150 + $100 Application Fee'
+            'price' => '150 € + 100 € Antragsgebühr'
         ]
     ],
     'footer' => [
-        'home' => 'Home',
-        'howitworks' => 'How It Works',
-        'programs' => 'Programs',
-        'pricing' => 'Pricing',
-        'contact' => 'Contact Us',
-        'email' => 'Email: info@example.com',
-        'copyright' => '&copy; ' . date('Y') . ' YourCompany. All rights reserved.'
-    ]
+        'home' => 'Startseite',
+        'howitworks' => 'Wie es funktioniert',
+        'programs' => 'Programme',
+        'pricing' => 'Preise',
+        'contact' => 'Kontakt',
+        'email' => 'E-Mail: info@example.com',
+        'copyright' => '&copy; ' . date('Y') . ' YourCompany. Alle Rechte vorbehalten.'
+    ],
+    // Contact form translations
+    'contact_us_header' => 'Kontakt / Bewerbung',
+    'input_name' => 'Name',
+    'input_email' => 'E-Mail',
+    'input_country' => 'Land',
+    'select_program' => 'Programm auswählen',
+    'program_engineering' => 'Ingenieurwesen',
+    'program_medicine' => 'Medizin',
+    'program_computer_science' => 'Informatik',
+    'program_business' => 'Betriebswirtschaft',
+    'program_architecture' => 'Architektur',
+    'program_humanities' => 'Geisteswissenschaften',
+    'input_message' => 'Ihre Nachricht',
+    'submit_button' => 'Absenden',
+    'success_title' => 'Erfolg',
+    'success_message' => 'Vielen Dank für Ihre Bewerbung!',
+    'error_title' => 'Fehler',
+    'error_message' => 'Die Übermittlung ist fehlgeschlagen.',
+    'submit_error' => 'Fehler beim Absenden des Formulars. Bitte versuchen Sie es später erneut.',
+    'close_button' => 'Schließen',
 ];

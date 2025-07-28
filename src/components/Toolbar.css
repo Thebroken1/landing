@@ -41,7 +41,9 @@ a:hover{
     position: absolute;
     font-size: 45px;
     left: 43%;
+    bottom:50%;
     transform: translateX(-50%);
+    color: rgb(43, 47, 255);
 }
 #lang{
     width: 140%;

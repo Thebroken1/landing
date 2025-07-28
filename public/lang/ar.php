@@ -9,11 +9,9 @@ return [
         'contact' => 'اتصل بنا',
         'lang' => 'اللغة'
     ],
-    'banner' => [
-        'headline' => 'الدراسة في ألمانيا',
-        'subheadline' => 'مستقبلك يبدأ هنا. انضم إلى الآلاف من الطلاب اليوم!',
-        'cta' => 'قدّم الآن'
-    ],
+  'banner_headline' => 'الدراسة في ألمانيا',
+  'banner_subheadline' => 'مستقبلك يبدأ هنا. انضم إلى الآلاف من الطلاب اليوم!',
+  'banner_apply_button' => 'قدّم الآن',
     'howitworks' => [
         'title' => 'كيف يعمل',
         'step1' => [
@@ -80,5 +78,24 @@ return [
         'contact' => 'اتصل بنا',
         'email' => 'البريد الإلكتروني: info@example.com',
         'copyright' => '&copy; ' . date('Y') . ' شركتك. جميع الحقوق محفوظة.'
-    ]
+    ],
+        'contact_us_header' => 'اتصل / قدم طلبًا',
+    'input_name' => 'الاسم',
+    'input_email' => 'البريد الإلكتروني',
+    'input_country' => 'البلد',
+    'select_program' => 'اختر البرنامج',
+    'program_engineering' => 'الهندسة',
+    'program_medicine' => 'الطب',
+    'program_computer_science' => 'علوم الحاسوب',
+    'program_business' => 'الأعمال',
+    'program_architecture' => 'العمارة',
+    'program_humanities' => 'العلوم الإنسانية',
+    'input_message' => 'رسالتك',
+    'submit_button' => 'إرسال',
+    'success_title' => 'نجاح',
+    'success_message' => 'شكرًا لتقديمك!',
+    'error_title' => 'خطأ',
+    'error_message' => 'فشل في الإرسال.',
+    'submit_error' => 'حدث خطأ أثناء إرسال النموذج. يرجى المحاولة لاحقًا.',
+    'close_button' => 'إغلاق',
 ];

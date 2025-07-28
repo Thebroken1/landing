@@ -9,11 +9,9 @@ return [
         'contact' => 'Contact Us',
         'lang' => 'Language'
     ],
-    'banner' => [
-        'headline' => 'Study in Germany',
-        'subheadline' => 'Your future starts here. Join thousands of students today!',
-        'cta' => 'Apply Now'
-    ],
+    'banner_headline' => 'Study in Germany',
+    'banner_subheadline' => 'Your future starts here. Join thousands of students today!',
+    'banner_apply_button' => 'Apply Now',
     'howitworks' => [
         'title' => 'How It Works',
         'step1' => [
@@ -33,7 +31,7 @@ return [
         'title' => 'Programs',
         'engineering' => 'Engineering',
         'medicine' => 'Medicine',
-        'computerscience' => 'Computer Science',
+        'computer_science' => 'Computer Science',
         'business' => 'Business',
         'architecture' => 'Architecture',
         'humanities' => 'Humanities'
@@ -80,5 +78,25 @@ return [
         'contact' => 'Contact Us',
         'email' => 'Email: info@example.com',
         'copyright' => '&copy; ' . date('Y') . ' YourCompany. All rights reserved.'
-    ]
+    ],
+    // Contact form translations
+    'contact_us_header' => 'Contact / Apply',
+    'input_name' => 'Name',
+    'input_email' => 'Email',
+    'input_country' => 'Country',
+    'select_program' => 'Select Program',
+    'program_engineering' => 'Engineering',
+    'program_medicine' => 'Medicine',
+    'program_computer_science' => 'Computer Science',
+    'program_business' => 'Business',
+    'program_architecture' => 'Architecture',
+    'program_humanities' => 'Humanities',
+    'input_message' => 'Your message',
+    'submit_button' => 'Submit',
+    'success_title' => 'Success',
+    'success_message' => 'Thank you for your submission!',
+    'error_title' => 'Error',
+    'error_message' => 'Submission failed.',
+    'submit_error' => 'Error submitting form. Please try again later.',
+    'close_button' => 'Close',
 ];
