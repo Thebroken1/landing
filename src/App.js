@@ -11,7 +11,7 @@ function App() {
   const [strings, setStrings] = useState({});
 
   const fetchLanguage = (language) => {
-    return fetch(`http://localhost:80/GetLang.php?lang=${language}`)
+    return fetch(`/GetLang.php?lang=${language}`)
       .then(res => {
         if (!res.ok) throw new Error('Language file not found');
         return res.json();
