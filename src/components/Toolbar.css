@@ -1,0 +1,179 @@
+.toolbarBody {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img {
+  width: 20%;
+  height: 100%;
+  align-items: center;
+}
+
+.tools {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tools > a {
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  height: 4vh;
+  top: 30%;
+  margin-left: 9%;
+  white-space: nowrap;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(115, 0, 255, 0.397);
+}
+
+.title {
+  position: absolute;
+  font-size: 45px;
+  left: 43%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  color: rgb(43, 47, 255);
+}
+
+#lang {
+  width: 140%;
+  position: relative;
+  margin-top: 230%;
+  margin-left: 200%;
+}
+
+/* --- Responsive Styles --- */
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  .toolbarBody {
+    flex-direction: row;  /* keep items in a row */
+    height: auto;        /* don't fix height, let it grow */
+    align-items: center; /* vertically center items */
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo {
+    height: 150px;
+    top: 0;
+    transform: none;
+    flex-shrink: 0;  /* prevent shrinking */
+  }
+  
+  .img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tools {
+    flex: 1;                 /* take remaining space */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;        /* horizontal scroll if needed */
+    position: relative;
+    top: 0;                  /* remove any stray top values */
+  }
+  
+  .tools > a {
+    font-size: 14px;
+    margin: 0 0.5rem;
+    white-space: nowrap;    /* prevent links from wrapping */
+    position: relative;
+    bottom: 80%;
+  }
+  
+  .title {
+    position: relative;
+    font-size: 28px;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin: 0 1rem 0 0;
+    white-space: nowrap;
+    flex-shrink: 0;         /* don't shrink */
+  }
+  
+  #lang {
+    width: auto;
+    margin-left: 1rem;
+    position: relative;
+    top: 0;
+    flex-shrink: 0;
+  }
+}
+
+
+/* Mobile phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .toolbarBody {
+    flex-direction: column;
+    height: 40vh;
+  }
+  .logo {
+    height: 120px;
+  }
+  .img {
+    width: 30%;
+    height: auto;
+  }
+  .tools {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+  }
+.tools > a {
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    top: -2vh;
+}
+/* Replace absolute with relative and center it inside .tools */
+.title {
+  position: absolute;
+  font-size: 24px;
+  color: rgb(43, 47, 255);
+  margin: 0 1rem 0 0;
+  white-space: nowrap;
+  bottom: 85%;
+}
+
+  #lang {
+    right: 2%;
+    width: auto;
+    position: absolute;
+    background-color: rgb(62, 45, 247);
+    font-size: 14px;
+
+    }
+
+}
