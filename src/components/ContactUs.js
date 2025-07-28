@@ -19,7 +19,7 @@ function ContactUs({ strings }) {
     message: "",
   });
 
-  // Translation helper
+
   const t = (key, fallback) => {
     if (!strings) {
       console.warn("No translation strings provided");
@@ -155,7 +155,6 @@ function ContactUs({ strings }) {
         <Button as="input" type="submit" value={t("submit_button", "Submit")} />
       </form>
 
-      {/* Modal Popup */}
       <Modal show={modalInfo.show} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
           <Modal.Title>{modalInfo.title}</Modal.Title>

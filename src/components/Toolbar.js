@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Toolbar({ changeLanguage, strings, currentLang }) {
-  // Nested translation function supporting dot notation keys
+
   const t = (key, fallback) => {
     if (!strings) return fallback || '';
     const keys = key.split('.');

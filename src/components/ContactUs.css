@@ -1,9 +1,9 @@
-/* src/components/ContactForm.css */
 .contactFormBody {
   padding: 40px;
   background: #f9f9f9;
   text-align: center;
   height: 70vh;
+  box-sizing: border-box;
 }
 
 .contactForm {
@@ -11,6 +11,7 @@
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .contactForm input,
@@ -19,6 +20,16 @@
   margin: 10px 0;
   padding: 12px;
   font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contactForm textarea {
+  min-height: 100px;
 }
 
 .contactForm button {
@@ -27,8 +38,69 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .contactForm button:hover {
   background: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller (max-width: 991px) */
+@media (max-width: 991px) {
+  .contactFormBody {
+    padding: 30px 20px;
+    height: auto; /* Let height grow naturally */
+  }
+
+  .contactForm {
+    max-width: 400px;
+  }
+
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .contactForm textarea {
+    min-height: 80px;
+  }
+
+  .contactForm button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Mobile phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .contactFormBody {
+    padding: 20px 15px;
+    height: auto;
+  }
+
+  .contactForm {
+    max-width: 100%;
+  }
+
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contactForm textarea {
+    min-height: 70px;
+  }
+
+  .contactForm button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

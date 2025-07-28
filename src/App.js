@@ -10,7 +10,6 @@ function App() {
   const [lang, setLang] = useState('en');
   const [strings, setStrings] = useState({});
 
-  // Fetch language strings function
   const fetchLanguage = (language) => {
     return fetch(`http://localhost:80/GetLang.php?lang=${language}`)
       .then(res => {
@@ -25,11 +24,9 @@ function App() {
       })
       .catch(err => {
         console.error(err);
-        // fallback maybe?
       });
   };
 
-  // On mount: detect URL hash lang or use default 'en'
   useEffect(() => {
     const urlHashLang = window.location.hash.split('/')[1];
     if (urlHashLang && ['en', 'ar', 'de'].includes(urlHashLang)) {
@@ -39,13 +36,13 @@ function App() {
     }
   }, []);
 
-  // Language switcher handler
+
   const changeLang = (newLang) => {
     fetchLanguage(newLang);
-    window.location.hash = `#/${newLang}`; // update URL for bookmarking
+    window.location.hash = `#/${newLang}`; 
   };
 
-  // Scroll function
+
   function scroll() {
     const contactSection = document.getElementById('contactus');
     if (contactSection) {
@@ -53,7 +50,7 @@ function App() {
     }
   }
 
-  // Helper: fallback text for untranslated keys with nested support
+
   const t = (key, fallback) => {
     if (!strings || Object.keys(strings).length === 0) return fallback || '';
 
@@ -77,7 +74,6 @@ function App() {
 
       <div className="hero" id="hero">
         <div className="Top">
-          {/* Pass changeLang to Toolbar so language can be changed */}
           <Toolbar key={lang} changeLanguage={changeLang} strings={strings} currentLang={lang} />
         </div>
         <div className="banner">

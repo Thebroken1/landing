@@ -1,112 +1,86 @@
-.App{
+.App {
   height: 100%;
   width: 100%;
 }
-.hero{
-
+.hero {
   width: 100%;
   height: 100vh;
 }
-
-.contactus{
+.contactus {
   width: 100%;
   height: 70vh;
 }
-
-
-.howitworks{
+.howitworks {
   width: 100%;
   height: 80vh;
   justify-content: center;
 }
-.text{
+.text {
   font-size: 36px;
   text-align: center;
-  padding-top:1% ;
+  padding-top: 1%;
 }
-
-.text2{
+.text2 {
   font-size: 26px;
   margin-top: 5%;
   margin-left: 10%;
 }
-
-.para{
+.para {
   font-size: 20px;
   margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
 }
-.step{
+.step {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.step2{
-  background-color: #A86565;
+.step2 {
+  background-color: #a86565;
   width: 80%;
   margin-top: 2%;
-  
 }
-
-.programs{
-
+.programs {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-
-.programs>.text{
+.programs > .text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.r1{
+.r1 {
   margin-top: 10%;
-
   display: flex;
   height: 30vh;
   justify-content: space-around;
 }
-.r2{
+.r2 {
   margin-top: 5%;
-
   display: flex;
-  height: 30vh;  
+  height: 30vh;
   justify-content: space-around;
 }
-.r1>.box{
+.r1 > .box,
+.r2 > .box {
   position: relative;
   font-size: 20px;
-  padding:1%;
+  padding: 1%;
   margin-left: 1%;
-
   width: 30%;
   overflow: hidden;
   cursor: pointer;
 }
-
-.r2>.box{
-  position: relative;
-  font-size: 20px;
-  padding:1%;
-  margin-left: 1%;
-
-  width: 30%;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-img{
+img {
   width: 100%;
   height: 100%;
   display: block;
 }
-
 .r1 > .box img,
 .r2 > .box img {
   width: 100%;
@@ -114,8 +88,6 @@ img{
   display: block;
   transition: filter 0.4s ease; /* For blur effect */
 }
-
-
 .boxes {
   position: absolute;
   top: 50%;
@@ -127,96 +99,196 @@ img{
   opacity: 0; /* hidden by default */
   transition: opacity 0.4s ease;
 }
-
 /* Hover effect */
 .r1 > .box:hover img,
 .r2 > .box:hover img {
   filter: blur(4px); /* Blurs the image */
 }
-
 .r1 > .box:hover .boxes,
 .r2 > .box:hover .boxes {
   opacity: 1; /* Shows the text */
 }
-
-.pricing{
+.pricing {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.pricing>.text{
+.pricing > .text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-
-.tier{
+.tier {
   position: relative;
-  background-color: #EA7676;
+  background-color: #ea7676;
   width: 30%;
   height: 70vh;
   margin-top: 13vh;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
-
-.tierHeader{
+.tierHeader {
   text-align: center;
   font-size: 26px;
 }
-
 .tierFeatures {
   margin-top: 15%;
   list-style-type: disc;
   text-align: left;
   font-size: 20px;
 }
-
-.tierFeatures>li{
-  margin-top:10%;
+.tierFeatures > li {
+  margin-top: 10%;
   margin-left: 7%;
 }
-
 .tierPrice {
   font-size: 22px;
   font-weight: bold;
   margin-top: 12%;
   text-align: center;
 }
-
 .cta-button {
   margin-top: auto;
   position: relative;
   align-self: center;
   bottom: 4%;
 }
-
 .footer {
   background-color: #333;
   color: #fff;
   padding: 40px 0;
   text-align: center;
 }
-
 .footer-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .footer-links a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
 }
-
 .footer-links a:hover {
   text-decoration: underline;
 }
-
 .footer-contact,
 .footer-copy {
   font-size: 14px;
+}
+
+/* --- Responsive Styles --- */
+
+/* Tablets (768px and up) */
+@media (max-width: 991px) {
+  .hero {
+    height: 70vh;
+  }
+  .contactus {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .howitworks {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .programs {
+    height: auto;
+  }
+  .r1,
+  .r2 {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .r1 > .box,
+  .r2 > .box {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  .pricing {
+    flex-direction: column;
+    height: auto;
+  }
+  .tier {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+  }
+  .tierFeatures > li {
+    margin-left: 10px;
+  }
+}
+
+/* Mobile phones (up to 767px) */
+@media (max-width: 767px) {
+  .hero,
+  .contactus,
+  .howitworks,
+  .programs,
+  .pricing {
+    height: auto;
+    padding: 1rem;
+  }
+  .text {
+    font-size: 26px;
+    padding-top: 1rem;
+  }
+  .text2 {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+  .para {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .r1,
+  .r2 {
+    flex-direction: column;
+    height: auto;
+  }
+  .r1 > .box,
+  .r2 > .box {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+  .boxes {
+    font-size: 24px;
+  }
+  .pricing {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .tier {
+    width: 95%;
+    height: auto;
+    margin: 1rem auto;
+  }
+  .tierHeader {
+    font-size: 20px;
+  }
+  .tierFeatures {
+    font-size: 16px;
+    margin-top: 10%;
+  }
+  .tierFeatures > li {
+    margin-left: 12px;
+  }
+  .tierPrice {
+    font-size: 18px;
+    margin-top: 8%;
+  }
+  .cta-button {
+    bottom: 0;
+  }
+  .footer-content {
+    gap: 10px;
+  }
+  .footer-contact,
+  .footer-copy {
+    font-size: 12px;
+  }
 }
