@@ -55,7 +55,7 @@ function ContactUs({ strings }) {
     formDataToSend.append("file", formData.file);
 
     try {
-      const response = await fetch("http://localhost:80/Process.php", {
+      const response = await fetch("/Process.php", {
         method: "POST",
         body: formDataToSend,
       });
