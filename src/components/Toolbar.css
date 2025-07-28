@@ -63,6 +63,7 @@ a:hover {
   position: relative;
   margin-top: 230%;
   margin-left: 200%;
+  background-color: rgb(62, 45, 247);
 }
 
 /* --- Responsive Styles --- */
@@ -116,6 +117,7 @@ a:hover {
     transform: none;
     margin: 0 1rem 0 0;
     white-space: nowrap;
+    color: rgb(43, 47, 255);
     flex-shrink: 0;         /* don't shrink */
   }
   
@@ -124,6 +126,7 @@ a:hover {
     margin-left: 1rem;
     position: relative;
     top: 0;
+    background-color: rgb(62, 45, 247);
     flex-shrink: 0;
   }
 }
